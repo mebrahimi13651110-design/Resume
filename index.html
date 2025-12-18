@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه حرفه‌ای مجید ابراهیمی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0f172a; /* سرمه‌ای تیره و مقتدر */
+            --accent-color: #f59e0b;  /* طلایی/نارنجی شاد */
+            --blue-bright: #3b82f6;   /* آبی روشن برای انرژی */
+            --bg-body: #f1f5f9;
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg-body);
+            color: #1e293b;
+            padding: 50px 0;
+        }
+        .resume-container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        /* Header / Sidebar */
+        .sidebar {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e293b 100%);
+            color: white;
+            padding: 40px 30px;
+            height: 100%;
+        }
+        .profile-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 6px solid rgba(245, 158, 11, 0.3);
+            padding: 5px;
+            background: #fff;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .sidebar h1 { font-size: 2rem; font-weight: 700; margin-top: 15px; }
+        .sidebar .badge-title {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .contact-item {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .contact-item:hover { background: rgba(255,255,255,0.1); transform: scale(1.02); }
+        .contact-item i { color: var(--accent-color); margin-left: 10px; font-size: 1.1rem; }
+
+        /* Main Content */
+        .content { padding: 40px 50px; }
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .section-title i {
+            background: var(--blue-bright);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+        }
+        .card-custom {
+            border: none;
+            border-right: 4px solid var(--accent-color);
+            background: #f8fafc;
+            border-radius: 0 15px 15px 0;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .card-custom:hover { transform: translateX(-5px); background: #f1f5f9; }
+        
+        /* Skill Tags */
+        .skill-pill {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            border: 1px solid #e2e8f0;
+            padding: 6px 16px;
+            border-radius: 12px;
+            font-weight: 500;
+            margin: 4px;
+            font-size: 0.85rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .skill-pill:hover { border-color: var(--blue-bright); color: var(--blue-bright); }
+
+        .achievement-badge {
+            background: #fff9db;
+            border: 1px solid #ffec99;
+            color: #f08c00;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .resume-container { box-shadow: none; border-radius: 0; }
+            .sidebar { background: #0f172a !important; color: white !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="resume-container row g-0">
+        <div class="col-lg-4 sidebar text-center text-lg-end">
+            <div class="profile-container">
+                <img src="my-photo.jpg" alt="مجید ابراهیمی" class="profile-img" onerror="this.src='https://via.placeholder.com/170/FFFFFF/0f172a?text=Majid+Ebrahimi'">
+            </div>
+            
+            <h1 class="text-center text-lg-end">مجید ابراهیمی</h1>
+            <div class="text-center text-lg-end">
+                <span class="badge-title">Senior Software Engineer</span>
+            </div>
+
+            <div class="contact-box mt-4">
+                <div class="contact-item"><i class="fas fa-envelope"></i> IT_Majid_Ebrahimi@yahoo.com</div>
+                <div class="contact-item"><i class="fas fa-phone"></i> +98 912 915 0320</div>
+                <div class="contact-item"><i class="fas fa-location-dot"></i> البرز، ایران</div>
+                <div class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/majid-ebrahimi</div>
+            </div>
+
+            <div class="mt-5">
+                <h5 class="mb-3 text-white" style="border-right: 3px solid var(--accent-color); padding-right: 10px;">مهارت‌های فنی</h5>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
+                    <span class="skill-pill">.NET 8/Core</span>
+                    <span class="skill-pill">C# 12</span>
+                    <span class="skill-pill">Microservices</span>
+                    <span class="skill-pill">SQL Server (Expert)</span>
+                    <span class="skill-pill">Clean Architecture</span>
+                    <span class="skill-pill">Angular / React</span>
+                    <span class="skill-pill">Python Flask</span>
+                    <span class="skill-pill">Docker & CI/CD</span>
+                    <span class="skill-pill">T-SQL Tuning</span>
+                    <span class="skill-pill">SSRS Reporting</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 content">
+            <section class="mb-5">
+                <h2 class="section-title"><i class="fas fa-bolt"></i> خلاصه حرفه‌ای</h2>
+                <p style="text-align: justify; line-height: 1.9; color: #475569;">
+                    مهندس نرم‌افزار ارشد با <strong>بیش از ۱۰ سال سابقه</strong> درخشان در طراحی و توسعه سیستم‌های ERP و راهکارهای تحت وب سازمانی. متخصص در خلق معماری‌های مقیاس‌پذیر و بهینه‌سازی دیتابیس‌های حجیم. توانمند در مهندسی معکوس فرآیندهای کسب‌وکار و تبدیل آن‌ها به کدهای تمیز و پایدار. دارای تجربه رهبری تیم‌های فنی و هدایت پروژه‌های استراتژیک از ایده تا اجرا.
+                </p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> سوابق حرفه‌ای</h2>
+                
+                <div class="card-custom">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Senior Developer & Project Manager</strong>
+                        <span class="badge bg-primary">۱۴۰۰ - کنون</span>
+                    </div>
+                    <div class="text-primary fw-bold mb-2">گروه صنعتی مزمز (MazMaz)</div>
+                    <ul class="small mb-0">
+                        <li>طراحی معماری و توسعه <strong>Super App مزمز</strong> برای مدیریت لجستیک، منابع انسانی و فروش.</li>
+                        <li>یکپارچه‌سازی سیستم‌های مالی و عملیاتی با استفاده از تکنولوژی‌های مدرن Backend.</li>
+                        <li>آماده‌سازی دیتاسنترها برای تحلیل‌های داده‌محور و هوش مصنوعی.</li>
+                    </ul>
+                </div>
+
+                <div class="card-custom" style="border-right-color: var(--blue-bright);">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <strong>Software Developer & DBA</strong>
+                        <span class="badge bg-secondary">۱۳۹۲ - ۱۴۰۰</span>
+                    </div>
+                    <div class="text-primary fw-bold mb-2">UltraData Group</div>
+                    <p class="small mb-0">توسعه سیستم‌های ERP و MIS تخصصی صنعت پخش مویرگی. تمرکز ویژه بر بهینه‌سازی کوئری‌های سنگین SQL و پایداری سیستم در بار ترافیکی بالا.</p>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="section-title"><i class="fas fa-layer-group"></i> پروژه‌های منتخب</h2>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded shadow-sm bg-light">
+                            <i class="fas fa-calculator text-warning mb-2"></i><br>
+                            <strong>سیستم پورسانت رونیکس</strong>
+                            <p class="small text-muted mb-0">طراحی موتور محاسباتی پیچیده برای هزاران عامل فروش.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded shadow-sm bg-light">
+                            <i class="fas fa-mobile-screen text-warning mb-2"></i><br>
+                            <strong>سامانه ویزیتوری JPA</strong>
+                            <p class="small text-muted mb-0">اپلیکیشن سفارش‌گیری آنلاین و آفلاین با همگام‌سازی لحظه‌ای.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h2 class="section-title" style="font-size: 1.2rem;"><i class="fas fa-trophy"></i> افتخارات</h2>
+                        <div class="achievement-badge">
+                            <i class="fas fa-award fa-2x"></i>
+                            <span>برنده مسابقات فناورد (تیم VBCS) - رتبه برتر کشوری</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="section-title" style="font-size: 1.2rem;"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
+                        <p class="mb-0"><strong>کارشناسی مهندسی نرم‌افزار</strong></p>
+                        <small class="text-muted">دانشگاه زرند | فارغ‌التحصیل ۱۳۹۰</small>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="text-center my-5 text-muted small">
+    <p>این رزومه با عشق و دقت برای مجید ابراهیمی طراحی شده است | ۲۰۲۴</p>
+</div>
+
+</body>
+</html>
